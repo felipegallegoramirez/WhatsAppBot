@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label":"Run",
+        "dependsOn":[
+            "Backend",
+           "Frontend",
+
+        ],
+        "runOptions": {
+            "runOn": "folderOpen"
+        },  
+        "dependsOrder": "sequence",
+        "presentation":{
+           "reveal":"always",
+           "revealProblems":"never",
+           "panel":"new"
+        }
+     },
+
+         {
+            "label": "Frontend",
+            "type": "npm",
+            "script": "start",
+            "options": {
+                "cwd": "${workspaceFolder}/src/Frontend"
+            },
+        },
+        {
+            "label": "Backend",
+            "type": "npm",
+            "script": "start",
+            "options": {
+                "cwd": "${workspaceFolder}/src/Backend"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "close": true
+              }
+        
+        },
+
+
+    ]
+}
