@@ -1,0 +1,97 @@
+.inputModal{
+    top: 100px;
+    position: absolute;
+    width: 600px;
+    left: calc((100vw - 600px)/2);
+    height: 350px;
+    background-color: var(--w);
+    border-radius: 15px;
+    overflow-y: scroll;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.oculto{
+    visibility: hidden;
+    width:0px;
+    height:0px;
+    overflow: hidden;
+}
+
+.inputModal__election{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--b1);
+    border-radius: 5px;
+    color: var(--w);
+    outline: none;
+    border: none;
+}
+
+button:active{
+    background-color: var(--w);
+    color: var(--b1);
+    outline: 2px solid var(--b1);
+}
+
+.inputModal__actions{
+    margin-top: 20px;
+}
+
+.inputModal__actions button{
+    width: 150px;
+}
+
+.inputModal__actions>.create{
+ display: flex;
+ justify-content: flex-end;
+}
+
+.inputModal__actions>.edit{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputModal__select{
+margin-bottom: 20px;
+}
+
+.inputModal__select>span{
+ margin-right: 20px;
+}
+
+.inputModal__text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.inputModal__text>input{
+    width: 100%;
+}
+.inputModal__text>span{
+    margin-right: 20px;
+}
+
+.inputModal__check>span{
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.close{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+}
+
+.close>*{
+    margin: 0px;
+}

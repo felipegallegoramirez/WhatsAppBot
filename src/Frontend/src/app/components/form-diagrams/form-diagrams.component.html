@@ -1,1 +1,27 @@
-<p>form-diagrams works!</p>
+<div id="add" class="inputModal">
+    <div class="close">
+        <h2>Modificar</h2>
+        <button (click)="close()">X</button>
+    </div>
+
+    <div class="inputModal__text">
+        <span>Nombre</span>
+        <input id="vehicle_plate" type="text">
+    </div>
+    <div class="inputModal__text">
+        <span>Descripcion</span>
+        <input id="vehicle_ownerName" type="text">
+    </div>
+
+    <div class="inputModal__actions">
+        <div id="vehicle_create" class="create">
+            <button >Crear</button>
+        </div>
+
+        <div id="vehicle_edit" class="edit oculto">
+            <button >Editar</button>
+            <button >Eliminar</button>
+        </div>
+    </div>
+
+</div>

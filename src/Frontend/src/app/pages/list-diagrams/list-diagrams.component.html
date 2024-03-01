@@ -1,6 +1,6 @@
 <div class="sup-section">
     <h1>Mis diagramas</h1>
-    <button>Crear</button>
+    <button (click)="close('asd')">Crear</button>
 </div>
 
 <div class="cards-container">
@@ -13,4 +13,9 @@
 
     </div>
 
+</div>
+
+
+<div *ngIf="form">
+    <app-form-diagrams  item="asd" (Close)="close($event)"></app-form-diagrams>
 </div>

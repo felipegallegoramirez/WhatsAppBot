@@ -1,9 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormDiagramsComponent } from '../../components/form-diagrams/form-diagrams.component';
+
 
 @Component({
   selector: 'app-diagrams',
   standalone: true,
-  imports: [],
+  imports: [FormDiagramsComponent,CommonModule],
   templateUrl: './diagrams.component.html',
   styleUrl: './diagrams.component.css'
 })
@@ -41,6 +44,10 @@ export class DiagramsComponent  implements OnInit{
     }
     buttons[menu].classList.add("select")
     subMenu[menu].classList.remove("oculto")
+  }
+  form:boolean=false
+  close(a:any){
+    this.form=!this.form
   }
 
 }

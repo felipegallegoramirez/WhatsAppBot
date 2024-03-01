@@ -1,9 +1,12 @@
 .main {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .main > div {
   height: 100vh;
+  overflow: hidden;
 }
 
 .diagram {

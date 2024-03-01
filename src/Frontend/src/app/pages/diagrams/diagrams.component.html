@@ -66,11 +66,14 @@
 </div>
 
 <div class="config">
-    <button>config</button>
+    <button (click)="close('as')">config</button>
 </div>
 
 <div class="tools">
     <button>Agregar</button>
     <button>Conectar</button>
     <button>Exportar</button>
+</div>
+<div *ngIf="form">
+    <app-form-diagrams  item="asd" (Close)="close($event)"></app-form-diagrams>
 </div>
