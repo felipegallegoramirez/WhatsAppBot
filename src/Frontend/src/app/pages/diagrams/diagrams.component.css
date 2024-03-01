@@ -1,0 +1,160 @@
+.main {
+  display: flex;
+}
+
+.main > div {
+  height: 100vh;
+}
+
+.diagram {
+  width: calc(100vw - 50px);
+}
+.diagram > canvas {
+  width: 100%;
+  height: 100%;
+}
+.menu_button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  background-color: var(--g);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.menu_button > p {
+  font-size: 80px;
+  margin: 5px;
+  color: var(--b1);
+  transition-duration: 0.5s;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 300px;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+.menu > div {
+  background-color: var(--g);
+  padding: 40px 20px 20px 0px;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 300px;
+}
+.menu.oculto {
+  width: 0px;
+}
+
+.menu_button.oculto {
+  transform: translate(-300px);
+}
+
+.menu_button.oculto > p {
+  transform: rotate(180deg);
+}
+
+.menu_sup{
+    display: flex;
+}
+.menu_sup>button{
+    width: calc(100% / 3);
+    color: var(--w);
+    outline: none;
+    border: none;
+    margin: 0px 5px 20px 5px;
+    background-color: var(--b2);
+    border-radius: 5px;
+    padding: 10px;
+}
+.menu_sup>button.select{
+    background-color: var(--b1);
+}
+
+.menu_sup>button:hover{
+    outline: 2px solid var(--b2);
+    background-color: var(--w);
+    color: var(--b2);
+}
+.menu_sup>button.select:hover{
+    outline:none;
+    color: var(--w);
+    background-color: var(--b1);
+}
+
+/* Inputs 
+*/
+
+.input__select {
+  margin-bottom: 20px;
+}
+
+.input__select > span {
+  margin-right: 20px;
+}
+
+.input__text {
+  margin-bottom: 20px;
+}
+
+.input__text > span {
+  margin-right: 20px;
+}
+
+.option{
+    height: calc(100vh - 300px);
+    transition-duration: 1s;
+}
+
+.option>div{
+    height: calc(100vh - 300px);
+}
+
+.option.oculto{
+
+    height: 0px;
+    overflow: hidden;
+}
+
+.options{
+    height: calc(100vh - 600px);
+}
+
+.config{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+button{
+    width: 100px;
+    color: var(--w);
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    background-color: var(--b1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover{
+    outline: 2px solid var(--b1);
+    background-color: var(--w);
+    color: var(--b1);
+}
+
+.tools{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: calc(100vw / 2 - 240px);
+    padding: 20px;
+}

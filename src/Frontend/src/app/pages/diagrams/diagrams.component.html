@@ -1,1 +1,76 @@
-<p>diagrams works!</p>
+<div class="main">
+    <div class="diagram">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="menu_button" (click)="menu()" class="menu_button">
+        <p> < </p>
+    </div>
+
+</div>
+
+<div id="menu" class="menu oculto">
+    <div>
+        <div class="menu_sup">
+            <button (click)="subMenu(0)" class="menu_sup_button select">General</button>
+            <button (click)="subMenu(1)" class="menu_sup_button">Adicional</button>
+            <button (click)="subMenu(2)" class="menu_sup_button">Estetico</button>
+        </div>
+        <div class="options">
+            <div class="option">
+                <div>
+                    <h1>1</h1>
+                    <div class="input__text">
+                        <span>Texto</span>
+                        <input  type="text">
+                    </div>
+                    <div class="input__select">
+                        <span>Tipo</span>
+                        <select>
+                            <option> Prueba</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option oculto">
+                <div>
+                    <h1>2</h1>
+                    <div class="input__text">
+                        <span>Texto</span>
+                        <input  type="text">
+                    </div>
+                    <div class="input__select">
+                        <span>Tipo</span>
+                        <select>
+                            <option> Prueba</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="option oculto">
+                <div>
+                    <h1>3</h1>
+                    <div class="input__text">
+                        <span>Texto</span>
+                        <input  type="text">
+                    </div>
+                    <div class="input__select">
+                        <span>Tipo</span>
+                        <select>
+                            <option> Prueba</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="config">
+    <button>config</button>
+</div>
+
+<div class="tools">
+    <button>Agregar</button>
+    <button>Conectar</button>
+    <button>Exportar</button>
+</div>
